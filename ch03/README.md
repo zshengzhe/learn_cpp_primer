@@ -141,3 +141,131 @@ ivec[0] = 42;
 [ex3_24a](ex3_24a.cpp)
 
 [ex3_24b](ex3_24b.cpp)
+
+## [Exercise 3.25](ex3_25.cpp)
+
+## Exercise 3.26
+
+> In the binary search program on page 112,
+> why did we write `mid=beg+(end-beg)/2;` instead of `mid=(beg+end) /2;`?
+
+There's no operator `+` for adding two iterators.
+
+## Exercise 3.27
+
+> Assuming txt_size is a function that takes no arguments
+> and returns an int value, which of the following definitions are illegal?
+> Explain why.
+
+```cpp
+unsigned buf_size = 1024;
+
+int ia[buf_size];   // illegal, The dimension value must be a constant expression.
+int ia[4 * 7 - 14]; // legal
+int ia[txt_size()]; // illegal, The dimension value must be a constant expression.
+char st[11] = "fundamental";  // illegal, the string's size is 12.
+```
+
+## Exercise 3.28
+
+> What are the values in the following arrays?
+
+```cpp
+string sa[10];      //all elements are empty strings
+int ia[10];         //all elements are 0
+
+int main() 
+{
+    string sa2[10]; //all elements are empty strings
+    int ia2[10];    //all elements are undefined
+}
+```
+
+## Exercise 3.29:
+
+> List some of the drawbacks of using an array instead of a vector.
+
+1. Size is fixed at compiling time.
+2. No API as that of vector.
+3. Bug prone.
+
+## Exercise 3.30
+
+> Identify the indexing errors in the following code:
+
+```cpp
+constexpr size_t array_size = 10;
+int ia[array_size];
+for (size_t ix = 1; ix <= array_size; ++ix)
+      ia[ix] = ix;
+```
+
+When `ix` equal to 10, the expression `ia[ix]` becomes a **UB**, as it is trying to dereference an element out of range.
+
+## [Exercise 3.31](ex3_31.cpp)
+
+## [Exercise 3.32](ex3_32.cpp)
+
+## Exercise 3.33
+
+> What would happen if we did not initialize the scores array in the program
+> on page 104?
+
+If so, values of array are undefined. Like this:
+
+[ex3_33](ex3_33.cpp)
+
+## Exercise 3.34
+
+> Given that p1 and p2 point to elements in the same array, what does the following code do?
+> Are there values of p1 or p2 that make this code illegal?
+
+```cpp
+p1 += p2 - p1;
+```
+
+* It moves `p1` with the offset `p2 - p1`. After this statement, `p1` and `p2` points to the same address.
+* Any legal value p1, p2 make this code legal.
+
+## [Exercise 3.35](ex3_35.cpp)
+
+## [Exercise 3.36](ex3_36.cpp)
+
+## Exercise 3.37
+
+> What does the following program do?
+
+```cpp
+const char ca[] = { 'h', 'e', 'l', 'l', 'o' };
+const char *cp = ca;
+while (*cp) {
+    cout << *cp << endl;
+    ++cp;
+}
+```
+
+This code will print all characters in `ca`, afterwards as no `\0` appended, **UB** would happen. For most cases, the
+while loop here won't be terminated as expected and many rubbish would be printed out.
+
+## Exercise 3.38
+
+> In this section, we noted that it was not only illegal but meaningless to try to add two pointers.
+> Why would adding two pointers be meaningless?
+
+See:
+
+- [Why can't I add pointers](http://stackoverflow.com/questions/2935038/why-cant-i-add-pointers)
+
+## [Exercise 3.39](ex3_39.cpp)
+
+## [Exercise 3.40](ex3_40.cpp)
+
+## [Exercise 3.41](ex3_41.cpp)
+
+## [Exercise 3.42](ex3_42.cpp)
+
+## [Exercise 3.43](ex3_43.cpp)
+
+## [Exercise 3.44](ex3_44.cpp)
+
+## [Exercise 3.45](ex3_45.cpp)
