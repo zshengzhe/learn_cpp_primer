@@ -3,7 +3,7 @@ project(learn_cpp_primer)
 
 set(CMAKE_CXX_STANDARD 11)
 
-
+# ch01
 add_executable(ex1_1 ch01/ex1_1.cpp)
 add_executable(ex1_2 ch01/ex1_2.cpp)
 add_executable(ex1_3 ch01/ex1_3.cpp)
@@ -13,6 +13,8 @@ add_executable(ex1_9 ch01/ex1_9.cpp)
 add_executable(ex1_10 ch01/ex1_10.cpp)
 add_executable(ex1_11 ch01/ex1_11.cpp)
 add_executable(ex1_16 ch01/ex1_16.cpp)
+
+# ch02
 add_executable(ex2_3 ch02/ex2_3.cpp)
 add_executable(ex2_7 ch02/ex2_8.cpp)
 add_executable(ex2_18 ch02/ex2_18.cpp)
@@ -20,6 +22,8 @@ add_executable(ex2_34 ch02/ex2_34.cpp)
 add_executable(ex2_40 ch02/ex2_40.cpp)
 add_executable(dm2_6_2 ch02/dm2_6_2.cpp)
 add_executable(ex2_41 ch02/ex2_41.cpp)
+
+# ch03
 add_executable(ex3_1a ch03/ex3_1a.cpp)
 add_executable(ex3_1b ch03/ex3_1b.cpp)
 add_executable(ex3_2a ch03/ex3_2a.cpp)
@@ -57,10 +61,14 @@ add_executable(ex3_42 ch03/ex3_42.cpp)
 add_executable(ex3_43 ch03/ex3_43.cpp)
 add_executable(ex3_44 ch03/ex3_44.cpp)
 add_executable(ex3_45 ch03/ex3_45.cpp)
+
+# ch04
 add_executable(ex4_10 ch04/ex4_10.cpp)
 add_executable(ex4_21 ch04/ex4_21.cpp)
 add_executable(ex4_22 ch04/ex4_22.cpp)
 add_executable(ex4_28 ch04/ex4_28.cpp)
+
+# ch05
 add_executable(ex5_3 ch05/ex5_3.cpp)
 add_executable(ex5_5 ch05/ex5_5.cpp)
 add_executable(ex5_6 ch05/ex5_6.cpp)
@@ -76,3 +84,25 @@ add_executable(ex5_21 ch05/ex5_21.cpp)
 add_executable(ex5_23 ch05/ex5_23.cpp)
 add_executable(ex5_24 ch05/ex5_24.cpp)
 add_executable(ex5_25 ch05/ex5_25.cpp)
+
+# ch06
+add_executable(ex6_3 ch06/ex6_3.cpp)
+add_executable(ex6_4 ch06/ex6_4.cpp)
+add_executable(ex6_5 ch06/ex6_5.cpp)
+add_executable(ex6_7 ch06/ex6_7.cpp)
+add_executable(factMain ch06/factMain.cpp ch06/fact.cpp)
+add_executable(ex6_10 ch06/ex6_10.cpp)
+add_executable(ex6_11 ch06/ex6_11.cpp)
+add_executable(ex6_17 ch06/ex6_17.cpp)
+add_executable(ex6_21 ch06/ex6_21.cpp)
+add_executable(ex6_22 ch06/ex6_22.cpp)
+add_executable(ex6_23 ch06/ex6_23.cpp)
+add_executable(ex6_25 ch06/ex6_25.cpp)
+add_executable(ex6_27 ch06/ex6_27.cpp)
+add_executable(ex6_30 ch06/ex6_30.cpp)
+add_executable(ex6_33 ch06/ex6_33.cpp)
+add_executable(ex6_42 ch06/ex6_42.cpp)
+add_executable(ex6_44 ch06/ex6_44.cpp)
+add_executable(ex6_47 ch06/ex6_47.cpp)
+add_executable(ex6_51 ch06/ex6_51.cpp)
+add_executable(ex6_54 ch06/ex6_54.cpp)
