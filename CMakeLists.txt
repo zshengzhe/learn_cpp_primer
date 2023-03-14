@@ -106,3 +106,13 @@ add_executable(ex6_44 ch06/ex6_44.cpp)
 add_executable(ex6_47 ch06/ex6_47.cpp)
 add_executable(ex6_51 ch06/ex6_51.cpp)
 add_executable(ex6_54 ch06/ex6_54.cpp)
+
+# ch07
+add_executable(ex7_1 ch07/ex7_1.cpp)
+add_executable(ex7_3 ch07/ex7_3.cpp)
+add_executable(ex7_7 ch07/ex7_7.cpp)
+add_executable(ex7_11 ch07/ex7_11.cpp)
+add_executable(ex7_13 ch07/ex7_13.cpp)
+add_executable(ex7_27 ch07/ex7_27.cpp)
+add_executable(ex7_41_test ch07/ex7_41_test.cpp ch07/ex7_41.cpp)
+add_executable(ex7_43 ch07/ex7_43.cpp)
