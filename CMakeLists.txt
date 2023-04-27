@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(learn_cpp_primer)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 # ch01
 add_executable(ex1_1 ch01/ex1_1.cpp)
@@ -189,3 +189,20 @@ add_executable(ex10_35 ch10/ex10_35.cpp)
 add_executable(ex10_36 ch10/ex10_36.cpp)
 add_executable(ex10_37 ch10/ex10_37.cpp)
 add_executable(ex10_42 ch10/ex10_42.cpp)
+
+#ch11
+add_executable(ex11_3 ch11/ex11_3.cpp)
+add_executable(ex11_4 ch11/ex11_4.cpp)
+add_executable(ex11_7 ch11/ex11_7.cpp)
+add_executable(ex11_8 ch11/ex11_8.cpp)
+add_executable(ex11_9 ch11/ex11_9.cpp)
+add_executable(ex11_10 ch11/ex11_10.cpp)
+add_executable(ex11_11 ch11/ex11_11.cpp)
+add_executable(ex11_12 ch11/ex11_12.cpp)
+add_executable(ex11_14 ch11/ex11_14.cpp)
+add_executable(ex11_20 ch11/ex11_20.cpp)
+add_executable(ex11_23 ch11/ex11_23.cpp)
+add_executable(ex11_26 ch11/ex11_26.cpp)
+add_executable(ex11_31 ch11/ex11_31.cpp)
+add_executable(ex11_33 ch11/ex11_33.cpp)
+add_executable(ex11_32 ch11/ex11_32.cpp)
